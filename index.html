@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-3.1.0.js"></script>
+        <script src="js/scripts.js"></script>
+        <title>Virtual Bank Account Fun</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to the virtual bank of Mizwaziland.</h1>
+
+            <div class="row">
+                <div class="col-md-4 register">
+                    <h2>Register a new account:</h2>
+
+                    <form id="register">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input id="name" placeholder="First name + Last Name" class="form-control" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="initial-deposit">Initial Deposit</label>
+                            <input id="initial-deposit" step="0.01" class="form-control" type="number">
+                        </div>
+
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+                <div class="col-md-4 transaction">
+                    <h2>Deposit or withdraw funds:</h2>
+
+                   <form id="transaction"> 
+                        <div class="form-group">
+                            <label for="deposit">Deposit Amount:</label>
+                            <input id="deposit" step="0.01" class="form-control" type="number">
+                        </div>
+                        <div class="form-group">
+                            <label for="withdrawal">Withdrawl Amount:</label>
+                            <input id="withdrawal" step="0.01" class="form-control" type="number">
+                        </div>
+
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="show-balance">
+                <h3>Account Name: <span class="accountName"></span></h3>
+                <h3>Current Balance: $<span class="balance"></span></h3>
+            </div>
+        </div>
+    </body>
+</html>

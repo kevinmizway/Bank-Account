@@ -1,0 +1,17 @@
+.register, .transaction {
+    border-style: solid;
+    padding-bottom: 20px;
+    border-color: #6495ED;
+    border-width: 1px;
+    background-color:#98FB98;
+}
+
+.transaction, h1 {
+    position: relative;
+    left: 30px;
+}
+
+#show-balance {
+    position: relative;
+    left: 300px;
+}
