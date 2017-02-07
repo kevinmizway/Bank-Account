@@ -5,6 +5,14 @@ function bankAccount(name, initialDeposit) {
 
 bankAccount.prototype.transaction = function(deposit, withdrawal) {
     this.balance += (deposit - withdrawal)
+
+    if(this.balance <0) {
+     if (confirm("You have insufficient funds. You will be charged a $25 overdraft fee"));
+        this.balance = this.balance - 25;
+    } else {
+    return false;
+    }
+
     return this.balance;
 }
 
