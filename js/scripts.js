@@ -29,6 +29,14 @@ $(function() {
         var withdrawal = parseFloat($("#withdrawal").val());
         $("#withdrawal").val("")
 
+        if(isNaN(deposit)) {
+            deposit = 0;
+        }
+
+        if(isNaN(withdrawal)) {
+            withdrawal = 0;
+        }
+
         newAccount.transaction(deposit, withdrawal);
 
         $(".balance").text(newAccount.balance.toFixed(2));
